@@ -14,8 +14,8 @@ module.exports = {
     },
   },
   env: {
-    'browser': true,
-    'node': true,
+    browser: true,
+    node: true,
     'vue/setup-compiler-macros': true,
   },
   plugins: ['@typescript-eslint'],
@@ -36,7 +36,19 @@ module.exports = {
     },
   },
   rules: {
-    'prettier/prettier': 1,
+    // 'prettier/prettier': 1,
+    'prettier/prettier': [
+      'error',
+      {
+        trailingComma: 'all',
+        indent: 2,
+        singleQuote: true,
+        semi: true,
+        tabWidth: 2,
+        useTabs: false,
+        printWidth: 120,
+      },
+    ],
     // Vue: Recommended rules to be closed or modify
     'vue/require-default-prop': 0,
     'vue/singleline-html-element-content-newline': 0,
