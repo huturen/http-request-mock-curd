@@ -1,11 +1,11 @@
 const TOKEN_KEY = 'token';
 
 const isLogin = () => {
-  return !!localStorage.getItem(TOKEN_KEY);
+  return true;
 };
 
 const getToken = () => {
-  return localStorage.getItem(TOKEN_KEY);
+  return '123456';
 };
 
 const setToken = (token: string) => {

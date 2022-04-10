@@ -11,7 +11,7 @@ import { UserState } from './types';
 
 const useUserStore = defineStore('user', {
   state: (): UserState => ({
-    name: undefined,
+    name: 'test',
     avatar: undefined,
     job: undefined,
     organization: undefined,
@@ -26,7 +26,7 @@ const useUserStore = defineStore('user', {
     registrationDate: undefined,
     accountId: undefined,
     certification: undefined,
-    role: '',
+    role: 'admin',
   }),
 
   getters: {

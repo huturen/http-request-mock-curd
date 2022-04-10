@@ -5,11 +5,9 @@
       :header-style="{ paddingBottom: '0' }"
       :body-style="{ padding: '17px 20px 21px 20px' }"
     >
-      <template #title>
-        {{ $t('workplace.popularContent') }}
-      </template>
+      <template #title>User List</template>
       <template #extra>
-        <a-link>{{ $t('workplace.viewMore') }}</a-link>
+        <a-link>View More</a-link>
       </template>
       <a-space direction="vertical" :size="10" fill>
         <a-radio-group
@@ -17,15 +15,9 @@
           type="button"
           @change="typeChange"
         >
-          <a-radio value="text">
-            {{ $t('workplace.popularContent.text') }}
-          </a-radio>
-          <a-radio value="image">
-            {{ $t('workplace.popularContent.image') }}
-          </a-radio>
-          <a-radio value="video">
-            {{ $t('workplace.popularContent.video') }}
-          </a-radio>
+          <a-radio value="text">Text</a-radio>
+          <a-radio value="image">Image</a-radio>
+          <a-radio value="video">Video</a-radio>
         </a-radio-group>
         <a-table
           :data="renderList"
@@ -101,15 +93,19 @@
   .general-card {
     min-height: 388px;
   }
+
   :deep(.arco-table-tr) {
     height: 44px;
+
     .arco-typography {
       margin-bottom: 0;
     }
   }
+
   .increases-cell {
     display: flex;
     align-items: center;
+
     span {
       margin-right: 4px;
     }
