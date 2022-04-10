@@ -3,5 +3,5 @@ module.exports = {
   semi: true,
   printWidth: 120,
   singleQuote: true,
-  vueIndentScriptAndStyle: true,
+  vueIndentScriptAndStyle: false,
 };

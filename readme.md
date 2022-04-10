@@ -10,5 +10,5 @@ yarn
 ## Mock development
 
 ```
-npm run mock-dev
+yarn mock-dev
 ```

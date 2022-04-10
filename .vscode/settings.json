@@ -18,10 +18,4 @@
         "editor.formatOnSave": true,
         "editor.formatOnPaste": false,
     },
-    // prettier setting
-    "prettier.singleQuote": true,
-    "prettier.semi": true,
-    "prettier.tabWidth": 2,
-    "prettier.useTabs": false,
-    "prettier.printWidth": 120,
 }

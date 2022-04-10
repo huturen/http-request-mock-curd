@@ -1,12 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import NProgress from 'nprogress'; // progress bar
-import 'nprogress/nprogress.css';
 
 import DefaultLayout from '@/layout/default-layout.vue';
-
 import Dashboard from './dashboard';
-
-NProgress.configure({ showSpinner: false }); // NProgress Configuration
 
 const router = createRouter({
   history: createWebHistory(),
