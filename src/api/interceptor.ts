@@ -32,7 +32,7 @@ axios.interceptors.request.use(
   (error) => {
     // do something
     return Promise.reject(error);
-  }
+  },
 );
 // add response interceptors
 axios.interceptors.response.use(
@@ -45,14 +45,10 @@ axios.interceptors.response.use(
         duration: 5 * 1000,
       });
       // 50008: Illegal token; 50012: Other clients logged in; 50014: Token expired;
-      if (
-        [50008, 50012, 50014].includes(res.code) &&
-        response.config.url !== '/api/user/info'
-      ) {
+      if ([50008, 50012, 50014].includes(res.code) && response.config.url !== '/api/user/info') {
         Modal.error({
           title: 'Confirm logout',
-          content:
-            'You have been logged out, you can cancel to stay on this page, or log in again',
+          content: 'You have been logged out, you can cancel to stay on this page, or log in again',
           okText: 'Re-Login',
           async onOk() {
             const userStore = useUserStore();
@@ -72,5 +68,5 @@ axios.interceptors.response.use(
       duration: 5 * 1000,
     });
     return Promise.reject(error);
-  }
+  },
 );

@@ -52,9 +52,7 @@
       type: 'number',
     },
   ]);
-  const othersOpts = [
-    { name: 'settings.colorWeek', key: 'colorWeek', defaultVal: false },
-  ];
+  const othersOpts = [{ name: 'settings.colorWeek', key: 'colorWeek', defaultVal: false }];
 
   const cancel = () => {
     appStore.updateSettings({ globalSettings: false });
@@ -74,7 +72,7 @@
   .fixed-settings {
     position: fixed;
     top: 280px;
-    right: 0px;
+    right: 0;
 
     svg {
       font-size: 18px;

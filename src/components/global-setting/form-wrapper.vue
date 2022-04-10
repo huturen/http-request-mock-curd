@@ -6,12 +6,7 @@
     :default-value="defaultValue"
     @change="handleChange"
   />
-  <a-switch
-    v-else
-    :default-checked="defaultValue"
-    size="small"
-    @change="handleChange"
-  />
+  <a-switch v-else :default-checked="defaultValue" size="small" @change="handleChange" />
 </template>
 
 <script lang="ts" setup>

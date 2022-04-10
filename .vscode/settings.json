@@ -1,0 +1,27 @@
+{
+    "eslint.enable": true,
+    "eslint.validate": [
+        "typescript",
+        "javascript",
+        "javascriptreact",
+        "vue"
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "editor.rulers": [
+        120
+    ],
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": false,
+    },
+    // prettier setting
+    "prettier.singleQuote": true,
+    "prettier.semi": true,
+    "prettier.tabWidth": 2,
+    "prettier.useTabs": false,
+    "prettier.printWidth": 120,
+}
