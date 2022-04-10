@@ -2,10 +2,10 @@ import { resolve } from 'path';
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import vueJsx from '@vitejs/plugin-vue-jsx';
-import svgLoader from 'vite-svg-loader';
+import { viteCommonjs } from '@originjs/vite-plugin-commonjs'; // for http-request-mock
 
 export default defineConfig({
-  plugins: [vue(), vueJsx(), svgLoader({ svgoConfig: {} })],
+  plugins: [vue(), vueJsx(), viteCommonjs()],
   resolve: {
     alias: [
       {

@@ -14,6 +14,9 @@ export default mergeConfig(
           },
         },
       },
+      commonjsOptions: {
+        transformMixedEsModules: true,
+      },
       chunkSizeWarningLimit: 2000,
     },
   },

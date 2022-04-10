@@ -8,22 +8,22 @@
 </template>
 
 <script lang="ts" setup>
-  import { useRouter } from 'vue-router';
+import { useRouter } from 'vue-router';
 
-  const router = useRouter();
-  const goToHomepage = () => {
-    router.push({ name: 'root' });
-  };
+const router = useRouter();
+const goToHomepage = () => {
+  router.push({ name: 'root' });
+};
 </script>
 
 <style scoped lang="less">
-  .content {
-    // padding-top: 100px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -121px;
-    margin-left: -95px;
-    text-align: center;
-  }
+.content {
+  // padding-top: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -121px;
+  margin-left: -95px;
+  text-align: center;
+}
 </style>

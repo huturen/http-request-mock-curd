@@ -47,6 +47,7 @@ module.exports = {
         tabWidth: 2,
         useTabs: false,
         printWidth: 120,
+        vueIndentScriptAndStyle: false,
       },
     ],
     // Vue: Recommended rules to be closed or modify
