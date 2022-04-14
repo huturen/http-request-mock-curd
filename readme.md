@@ -1,10 +1,14 @@
-# a-crud-demo-of-http-request-mock
+# A CRUD demo of http-request-mock
 
-## A CRUD demo of http-request-mock
+
+## Technology Stack
+```
+http-request-mock + vite + vue3 + ES2015+ + TypeScript + Arco Design
+```
 
 ## Setup
 ```
-yarn
+yarn install
 ```
 
 ## Mock development

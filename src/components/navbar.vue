@@ -10,6 +10,13 @@
     </div>
     <ul class="right-side">
       <li>
+        <a-tooltip content="Source code of this project">
+          <a-button class="nav-btn" type="outline" :shape="'circle'" @click="goToSource">
+            <template #icon><icon-code /></template>
+          </a-button>
+        </a-tooltip>
+      </li>
+      <li>
         <a-tooltip content="Document">
           <a-button class="nav-btn" type="outline" :shape="'circle'" @click="goToDocument">
             <template #icon><icon-book /></template>
@@ -28,6 +35,9 @@
 </template>
 
 <script lang="ts" setup>
+const goToSource = () => {
+  window.open('https://github.com/huturen/http-request-mock-curd.git');
+};
 const goToDocument = () => {
   window.open('https://huturen.github.io/http-request-mock-docs/');
 };
