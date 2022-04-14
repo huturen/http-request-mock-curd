@@ -22,5 +22,5 @@ git commit -m 'deploy'
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
 
-git push -f git@github.com:huturen/http-request-mock-curd.git master:gh-pages
+git push -f git@github.com:huturen/http-request-mock-curd.git main:gh-pages
 cd -
