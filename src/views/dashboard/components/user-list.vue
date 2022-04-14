@@ -7,12 +7,9 @@
           <a-button type="primary" size="small" class="reset">Reset Users</a-button>
         </a-popconfirm>
       </template>
-      <div class="gray">
-        For CRUD operations of the user list below, no server requests will be actually generated. All change operations
-        are implemented based on http-request-mock. http-request-mock supports data-change-caching. You can use it to
-        achieve a complete closed loop of product development. (Hit F12 to access Developer Tools and view the console
-        logs.)
-      </div>
+
+      <Introduction />
+
       <a-table :data="users" :pagination="pagination" page-position="bc" @page-change="fetchData">
         <template #pagination-left> Total: {{ pagination.total }} </template>
         <template #columns>
@@ -75,6 +72,7 @@ import { getUserList, deleteUser, UserRecord } from '@/api/dashboard';
 import type { DoneFunction } from '@/types/global';
 import DialogEdit from './dialog-edit.vue';
 import DialogAdd from './dialog-add.vue';
+import Introduction from './introduction.vue';
 
 const { loading, setLoading } = useLoading();
 const users = ref<UserRecord[]>();
