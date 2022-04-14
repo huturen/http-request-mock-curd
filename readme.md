@@ -14,5 +14,5 @@ yarn install
 ## Mock development
 
 ```
-yarn mock-dev
+yarn dev
 ```

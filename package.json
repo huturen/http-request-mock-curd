@@ -6,8 +6,7 @@
   "author": "huturen",
   "license": "MIT",
   "scripts": {
-    "dev": "vite --config ./config/vite.config.dev.ts --host",
-    "mock-dev": "http-request-mock-cli -w \"vite --config ./config/vite.config.dev.ts --host\"",
+    "dev": "http-request-mock-cli -e none -w \"vite --config ./config/vite.config.dev.ts --host\"",
     "build": "vue-tsc --noEmit && vite build --config ./config/vite.config.prod.ts",
     "report": "cross-env REPORT=true npm run build",
     "lint-staged": "npx lint-staged",
@@ -33,7 +32,7 @@
     "@vueuse/core": "^7.3.0",
     "arco-design-pro-vue": "^2.3.3",
     "axios": "^0.24.0",
-    "http-request-mock": "^1.6.12",
+    "http-request-mock": "^1.6.13",
     "vue": "^3.2.31",
     "vue-router": "^4.0.14"
   },
