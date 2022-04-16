@@ -5,8 +5,8 @@
  * @method post
  */
 /* eslint-disable */
-const users = require('./_users.js');
-module.exports = (request) => {
+import users from './_users.js';
+export default (request) => {
   const { id, name, gender, age, email, phone } = request.body;
   const user = users.find((user) => user.id === +id);
 
@@ -22,7 +22,7 @@ module.exports = (request) => {
   if (age < 18 || age > 30) {
     return { code: 100, msg: 'Invalid age', data: null };
   }
-  if (!/^[\w\.]+@[\w\.]+$/.test(email)) {
+  if (!/^[\w\.\+-]+@[\w\.\+-]+$/.test(email)) {
     return { code: 100, msg: 'Invalid email', data: null };
   }
   if (!/^\d{3}-\d{3}-\d{4}$/.test(phone)) {

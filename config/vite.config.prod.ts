@@ -4,6 +4,7 @@ import baseConig from './vite.config.base';
 export default mergeConfig(
   {
     mode: 'production',
+    base: '/http-request-mock-curd/',
     plugins: [],
     build: {
       rollupOptions: {
@@ -13,9 +14,6 @@ export default mergeConfig(
             vue: ['vue', 'vue-router', '@vueuse/core'],
           },
         },
-      },
-      commonjsOptions: {
-        transformMixedEsModules: true,
       },
       chunkSizeWarningLimit: 2000,
     },

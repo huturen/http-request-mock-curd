@@ -5,8 +5,8 @@
  * @method get
  */
 /* eslint-disable */
-const users = require('./_users.js');
-module.exports = (request) => {
+import users from './_users.js';
+export default (request) => {
   const page = +request.query.page || 1;
   const pageSize = 10;
 

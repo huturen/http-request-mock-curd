@@ -5,10 +5,10 @@
  * @method post
  */
 /* eslint-disable */
-const users = require('./_users.js');
-const faker = require('http-request-mock/plugin/faker.js');
+import users from './_users.js';
+import faker from 'http-request-mock/plugin/faker.mjs';
 
-module.exports = (request) => {
+export default (request) => {
   const { name, gender, age, email, phone } = request.body;
 
   if (!name) {
@@ -20,7 +20,7 @@ module.exports = (request) => {
   if (age < 18 || age > 30) {
     return { code: 100, msg: 'Invalid age', data: null };
   }
-  if (!/^[\w\.]+@[\w\.]+$/.test(email)) {
+  if (!/^[\w\.\+-]+@[\w\.\+-]+$/.test(email)) {
     return { code: 100, msg: 'Invalid email', data: null };
   }
   if (!/^\d{3}-\d{3}-\d{4}$/.test(phone)) {
