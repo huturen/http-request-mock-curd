@@ -5,8 +5,8 @@
  * @method post
  */
 /* eslint-disable */
-const users = require('./_users.js');
-module.exports = (request) => {
+import users from './_users.js';
+export default (request) => {
   const { id } = request.body;
   const index = users.findIndex((user) => user.id === +id);
 
