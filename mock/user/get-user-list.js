@@ -5,7 +5,7 @@
  * @method get
  */
 /* eslint-disable */
-import users from './_users.js';
+import users from './all-users.js';
 export default (request) => {
   const page = +request.query.page || 1;
   const pageSize = 10;

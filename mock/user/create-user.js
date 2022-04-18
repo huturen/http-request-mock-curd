@@ -5,7 +5,7 @@
  * @method post
  */
 /* eslint-disable */
-import users from './_users.js';
+import users from './all-users.js';
 import faker from 'http-request-mock/plugin/faker.mjs';
 
 export default (request) => {
