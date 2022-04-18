@@ -5,7 +5,7 @@
  * @method post
  */
 /* eslint-disable */
-import users from './_users.js';
+import users from './all-users.js';
 export default (request) => {
   const { id, name, gender, age, email, phone } = request.body;
   const user = users.find((user) => user.id === +id);
