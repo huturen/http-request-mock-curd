@@ -32,7 +32,7 @@
     "@vueuse/core": "^7.3.0",
     "arco-design-pro-vue": "^2.3.3",
     "axios": "^0.24.0",
-    "http-request-mock": "^1.6.18",
+    "http-request-mock": "^1.6.20",
     "vue": "^3.2.31",
     "vue-router": "^4.0.14"
   },

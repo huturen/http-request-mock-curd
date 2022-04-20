@@ -1,6 +1,6 @@
 /* eslint-disable */
 let mocker;
-import HttpRequestMock from 'http-request-mock';
+import HttpRequestMock from 'http-request-mock/http-request-mock.esm.mjs';
 
 mocker = HttpRequestMock.setup();
 
