@@ -1,0 +1,1 @@
+import{u as t}from"./all-users.ea6e8959.js";import"./arco.726edac9.js";var m=o=>{const a=+o.query.page||1,e=10,s=Math.max(a-1,0)*e,r=s+e;return t.sort((i,c)=>c.id-i.id),{code:0,msg:"ok",data:{list:t.slice(s,r),total:t.length}}};export{m as default};
