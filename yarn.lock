@@ -3092,10 +3092,10 @@ http-proxy@^1.18.1:
     follow-redirects "^1.0.0"
     requires-port "^1.0.0"
 
-http-request-mock@^1.7.6:
-  version "1.7.6"
-  resolved "https://registry.npmjs.org/http-request-mock/-/http-request-mock-1.7.6.tgz#b19d9ec9ec4479aad7b5ca40b3727c5d0de0332c"
-  integrity sha512-do2xnwpcBfKMY9OK2PBcoq4cKtxFkR+crRALjaB7hx/X7b8TTRR/UA5V557OnJJiWApQOQRLyj9IVfqf2+MwoQ==
+http-request-mock@^1.7.7:
+  version "1.7.7"
+  resolved "https://registry.npmjs.org/http-request-mock/-/http-request-mock-1.7.7.tgz#ce53e9a24d8ee80c3d2456da991f09a0fba2a087"
+  integrity sha512-+hUMcWx1yKjmKFVRy3bDvpLyJbIrtjyBaRp/Meev85bP0OeYSvOwqrkcGhpi1heXCrHTQpD7gbZhgopY/HNPdw==
   dependencies:
     "@ngneat/falso" "^4.0.0"
     chokidar "^3.5.2"
