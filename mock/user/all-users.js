@@ -1,7 +1,7 @@
 /* eslint-disable */
 
-import faker from 'http-request-mock/plugin/faker.mjs';
-import cache from 'http-request-mock/plugin/cache.mjs';
+import faker from 'http-request-mock/plugin/faker.esm.mjs';
+import cache from 'http-request-mock/plugin/cache.esm.mjs';
 
 const users = [...Array(50)].map(() => ({
   id: faker.incrementId('users', 1),
