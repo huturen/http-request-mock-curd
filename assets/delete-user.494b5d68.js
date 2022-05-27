@@ -1,0 +1,1 @@
+import{u as d}from"./all-users.a2470d8c.js";import"./arco.726edac9.js";var i=s=>{const{id:t}=s.body,e=d.findIndex(o=>o.id===+t);return e===-1?{code:100,msg:"User does not exist",data:null}:(d.splice(e,1),{code:0,msg:"ok",data:null})};export{i as default};
