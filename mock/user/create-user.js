@@ -6,7 +6,7 @@
  */
 /* eslint-disable */
 import users from './all-users.js';
-import faker from 'http-request-mock/plugin/faker.mjs';
+import faker from 'http-request-mock/plugin/faker.esm.mjs';
 
 export default (request) => {
   const { name, gender, age, email, phone } = request.body;
