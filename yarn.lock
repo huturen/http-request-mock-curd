@@ -3114,10 +3114,10 @@ http-proxy@^1.18.1:
     follow-redirects "^1.0.0"
     requires-port "^1.0.0"
 
-http-request-mock@^1.8.4:
-  version "1.8.4"
-  resolved "https://registry.npmjs.org/http-request-mock/-/http-request-mock-1.8.4.tgz#f3188304c040dfaf43a4262287f3680dc3f56eda"
-  integrity sha512-n+eDSQduEaZKuNj0bRjrif2qymSrIhzKkz94Zy9mbZqtI652cg/kKRvLfNdspToH/FPD4SO6poycqDymkjGJkw==
+http-request-mock@^1.8.5:
+  version "1.8.5"
+  resolved "https://registry.npmjs.org/http-request-mock/-/http-request-mock-1.8.5.tgz#dd3bd9a1b9588df8201216dec49ae268596404d1"
+  integrity sha512-+bvJdg6G9p0qvf+K+sqKooGdr/zAIISmRZjAHXj9PKDbgAAxD0ZQzPS7wx70P2eyCpqDtZSIJw7BtKpuFF7GEQ==
   dependencies:
     "@ngneat/falso" "^4.0.0"
     "@types/follow-redirects" "^1.14.1"
