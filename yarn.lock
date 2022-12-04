@@ -2720,7 +2720,7 @@ flatted@^3.1.0:
   resolved "https://registry.npmjs.org/flatted/-/flatted-3.2.5.tgz"
   integrity sha512-WIWGi2L3DyTUvUrwRKgGi9TwxQMUEqPOPQBVi71R96jZXJdFskXEmf54BoZaS1kknGODoIGASGEzBUYdyMCBJg==
 
-follow-redirects@^1.0.0, follow-redirects@^1.15.0:
+follow-redirects@^1.0.0:
   version "1.15.1"
   resolved "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.15.1.tgz#0ca6a452306c9b276e4d3127483e29575e207ad5"
   integrity sha512-yLAMQs+k0b2m7cVxpS1VKJVvoz7SS9Td1zss3XRwXj+ZDH00RJgnuLx7E44wx02kQLrdM3aOOy+FpzS7+8OizA==
@@ -3114,10 +3114,10 @@ http-proxy@^1.18.1:
     follow-redirects "^1.0.0"
     requires-port "^1.0.0"
 
-http-request-mock@^1.7.17:
-  version "1.7.17"
-  resolved "https://registry.npmjs.org/http-request-mock/-/http-request-mock-1.7.17.tgz#329f6926406057c123a417fcbdcce5ad8a92876d"
-  integrity sha512-2HTEXH8y3PfSZPslkL0cZhL580+LhSfuHCheFYw1G9b6iisp5bAab+ciQbbqreSuDTq20+mAlikk4k0V4C3K+g==
+http-request-mock@^1.8.4:
+  version "1.8.4"
+  resolved "https://registry.npmjs.org/http-request-mock/-/http-request-mock-1.8.4.tgz#f3188304c040dfaf43a4262287f3680dc3f56eda"
+  integrity sha512-n+eDSQduEaZKuNj0bRjrif2qymSrIhzKkz94Zy9mbZqtI652cg/kKRvLfNdspToH/FPD4SO6poycqDymkjGJkw==
   dependencies:
     "@ngneat/falso" "^4.0.0"
     "@types/follow-redirects" "^1.14.1"

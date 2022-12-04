@@ -9,7 +9,7 @@ mocker.mock({
   method: 'POST',
   body: import('./user/create-user.js'),
   delay: 800,
-  header: {
+  headers: {
     'content-type': 'application/json',
   },
 });
@@ -18,7 +18,7 @@ mocker.mock({
   method: 'POST',
   body: import('./user/delete-user.js'),
   delay: 800,
-  header: {
+  headers: {
     'content-type': 'application/json',
   },
 });
@@ -27,7 +27,7 @@ mocker.mock({
   method: 'GET',
   body: import('./user/get-user-list.js'),
   delay: 500,
-  header: {
+  headers: {
     'content-type': 'application/json',
   },
 });
@@ -36,7 +36,7 @@ mocker.mock({
   method: 'POST',
   body: import('./user/update-user.js'),
   delay: 800,
-  header: {
+  headers: {
     'content-type': 'application/json',
   },
 });
