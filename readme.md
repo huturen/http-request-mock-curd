@@ -16,3 +16,7 @@ yarn install
 ```
 yarn dev
 ```
+
+## nodejs version dependency
+
+v18
