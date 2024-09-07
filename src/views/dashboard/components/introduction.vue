@@ -5,9 +5,10 @@
     即使在没有后台接口的情况下，来实现产品研发的闭环。 （F12查看调试工具中的日志。）
     <br />
     <br />
-    For CRUD operations of the user list below, no server requests will be generated. All change operations are
-    implemented based on http-request-mock. <br />
-    http-request-mock supports <a-typography-text mark>data-change-cache</a-typography-text>. You can use it to achieve
-    a closed loop of product development. (Hit F12 to access Developer Tools and view the console logs.)
+    For the CRUD operations on the user list below, no server requests will be initiated. All modifications are handled
+    using http-request-mock. <br />
+    This tool supports <a-typography-text mark>data change caching</a-typography-text>, allowing you to achieve a
+    complete product development cycle without a live server. (Press F12 to open Developer Tools and view the console
+    logs.)
   </a-card>
 </template>
