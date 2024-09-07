@@ -20,4 +20,4 @@ jobs:
       with:
         ACCESS_TOKEN: ${{ secrets.ACTION_TOKEN }}
         BRANCH: gh-pages
-        FOLDER: docs
+        FOLDER: website
