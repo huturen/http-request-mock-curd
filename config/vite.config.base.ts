@@ -2,10 +2,20 @@ import { resolve } from 'path';
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import vueJsx from '@vitejs/plugin-vue-jsx';
+import mockPlugin from 'http-request-mock/tool/plugin/vite';
 
 export default defineConfig({
   base: './',
-  plugins: [vue(), vueJsx()],
+  plugins: [
+    vue(),
+    vueJsx(),
+    mockPlugin({
+      enable: true,
+      appEntry: /\/src\/main\.ts$/,
+      mockDir: resolve(__dirname, '../mock'),
+      debug: false,
+    }),
+  ],
   resolve: {
     alias: [
       {
